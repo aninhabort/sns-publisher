@@ -16,7 +16,7 @@ app.post("/nfe", async (req, res) => {
 
     const sns = new SNS({
       accessKeyId: process.env.AWS_ACCESS_KEY_ID,
-      // secretAccessKey: process.env.AWS_ACCESS_SECRET,
+      secretAccessKey: process.env.AWS_ACCESS_SECRET,
       region: "us-east-1",
     });
 
